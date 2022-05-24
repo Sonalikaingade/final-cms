@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="myclub_fragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myclubpage_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        tools:layout_editor_absoluteX="-16dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="My Clubs"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+
+        android:layout_marginLeft="20dp"
+       />
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:textColorHint="#AAAAAA"
+        android:hint="search clubs"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"/>
+
+    <Button
+        android:id="@+id/fav_club"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="140dp"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:text="Fav clubs"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#F6C42C"
+        android:layout_marginLeft="12dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="245dp"
+
+        android:layout_marginBottom="55dp"
+        android:background="#E4A03D">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="10dp" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
